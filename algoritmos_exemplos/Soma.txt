@@ -1,0 +1,20 @@
+/"Soma dois numeros inteiros positivos"/
+
+int:
+    num1
+    num2
+    total = 0
+
+saida: Digite o primeiro numero: 
+entrada: num1
+saida: Digite o segundo numero: 
+entrada: num2
+
+se: (num1 MAIOR 0) E (num2 MAIOR 0)<
+    total = num1 + num2
+    saida: Total = , total
+>
+
+senao: <
+    saida: Os numeros devem ser positivos!
+>

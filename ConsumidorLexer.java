@@ -4,7 +4,7 @@ import org.antlr.v4.runtime.Token;
 
 import java.io.IOException;
 
-public class ExemploLexer {
+public class ConsumidorLexer {
 
     public static void  main (String[] args){
         String filename = "C:\\UFLA\\compiladores\\delta-projeto-pratico\\casos_teste\\ComErro.txt";

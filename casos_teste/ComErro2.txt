@@ -1,6 +1,6 @@
 /"Imprime os números informados em ordem crescente
 
-nit:
+nit
     num1
     num2
 
@@ -17,4 +17,3 @@ se: num1 MAIOR num2 <
 senao: <
     saida: Menor: , num2
     saida: Maior: , num1
->

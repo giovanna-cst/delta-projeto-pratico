@@ -1,5 +1,9 @@
 grammar GramaticaDeltagrama;
 
+@header{
+    package antlr;
+}
+
 fragment NUM: [0-9];
 fragment LET: [a-zA-Z];
 
@@ -23,4 +27,10 @@ FIM: '>';
 AP: '(';
 FP: ')';
 VAR: LET(NUM|LET)*;
-WS: [ \r\t\n]* -> skip;
+WS:[ \r\t\n]* ->skip;
+programa: TIPO | SAI':'exp_sa | ENT':'VAR | SE':'(exp_se) | SE':'(exp_se) SENAO':'(exp_senao);
+valor: VAR | NUM_INT | NUM_REAL;
+exp_sa: valor;
+exp_se: (valor OP_COMP valor) OP_LOG (valor OP_COMP valor) inicio;
+exp_senao: exp_se | inicio;
+inicio: '<'programa'>';

@@ -1,11 +1,9 @@
-/"Imprime os números informados em ordem crescente
+/"Imprime os números informados em ordem crescente"/
 
-nit
+int:
     num1
     num2
 
-saida: Digite o primeiro numero: 
-entrada: num1
 saida: Digite o segundo numero: 
 entrada: num2
 
@@ -17,3 +15,4 @@ se: num1 MAIOR num2 <
 senao: <
     saida: Menor: , num2
     saida: Maior: , num1
+>

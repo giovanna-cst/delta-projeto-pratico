@@ -1,0 +1,20 @@
+/"Imprime os números informados em ordem crescente"/
+
+int:
+    num1
+    num2
+
+saida: Digite o primeiro numero: 
+entrada: num1
+saida: Digite o segundo numero: 
+entrada: num2
+
+se: num1 MAIOR num2 <<
+    saida: Menor: , num1
+    saida: Maior: , num2
+>
+
+senao: <
+    saida: Menor: , num2
+    saida: Maior: , num1
+>
